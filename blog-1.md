@@ -18,8 +18,8 @@ This means you can perform any operation without warnings or errors.
 let data: any = "hello";
 
 data = 42;
-data.toUpperCase();       // No compile-time error
-data.nonExistentMethod(); // Still no error
+data.toUpperCase();       
+data.nonExistentMethod(); 
 ```
 
 The issue is that TypeScript blindly trusts the developer. If `data` becomes a
@@ -35,7 +35,7 @@ to use it directly without checking its type first.
 ```typescript
 let data: unknown = "hello";
 
-data.toUpperCase(); // Error: Object is of type 'unknown'
+data.toUpperCase(); 
 ```
 
 Here, TypeScript forces you to verify the actual type before using it. This makes
