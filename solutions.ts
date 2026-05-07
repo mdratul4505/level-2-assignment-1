@@ -38,15 +38,15 @@ interface Book {
   author: string;
   publishedYear: number;
 }
- 
+
 interface BookWithReadStatus extends Book {
   isRead: boolean;
 }
- 
-function toggleReadStatus(book: Book, isRead: boolean = true): BookWithReadStatus {
+
+function toggleReadStatus(book: Book): BookWithReadStatus {
   return {
     ...book,
-    isRead,
+    isRead: true,
   };
 }
  
@@ -80,6 +80,6 @@ class Student extends Person {
 
 // problem -7
 function getIntersection(arr1: number[], arr2: number[]): number[] {
-  return arr1.filter((num) => arr2.includes(num));
+  return [...new Set(arr1.filter((num) => arr2.includes(num)))];
 }
 
