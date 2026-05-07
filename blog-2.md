@@ -52,22 +52,6 @@ type LoginForm = Pick<User, "email" | "password">;
 type UserCard = Pick<User, "id" | "name">;
 ```
 
-**Result:**
-
-```typescript
-// LoginForm
-{
-  email: string;
-  password: string;
-}
-
-// UserCard
-{
-  id: number;
-  name: string;
-}
-```
-
 Using `Pick` ensures that derived types always stay synchronized with the original
 interface. If a property name or type changes in `User`, TypeScript automatically
 updates the dependent types and reports errors where necessary.

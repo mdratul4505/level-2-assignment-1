@@ -5,10 +5,12 @@ This assignment demonstrates fundamental TypeScript concepts including data typi
 interfaces, class inheritance, type checking, and data structure manipulation.
 
 ## File Structure
+```
 ├── solutions.ts   # All 7 problem solutions
 ├── blog-1.md      # Blog: any vs unknown & type narrowing
 ├── blog-2.md      # Blog: Pick and Omit utility types
 └── README.md      # Project overview
+```
 
 ## Problems Covered
 1. Filter Even Numbers
