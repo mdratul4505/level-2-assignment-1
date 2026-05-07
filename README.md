@@ -23,7 +23,7 @@ interfaces, class inheritance, type checking, and data structure manipulation.
 
 ## How to Run
 ```bash
-node solutions.ts
+ts-node solutions.ts
 ```
 
 ## Blog Topics
